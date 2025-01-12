@@ -3,7 +3,7 @@ import styled from "styled-components";
 interface ContainerProps {
   className?: string;
   children?: React.ReactNode;
-  id?: string; // Add `id` as a valid prop
+  id?: string;
 }
 
 export const Container = styled.section<ContainerProps>`
@@ -36,6 +36,11 @@ export const Container = styled.section<ContainerProps>`
   }
 
   .feeling-image {
+    display: flex;
+    justify-content: center; /* Ensures image is centered horizontally */
+    align-items: center; /* Ensures image is centered vertically */
+    text-align: center;
+
     img {
       max-width: 500px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Added shadow for image */
@@ -53,14 +58,13 @@ export const Container = styled.section<ContainerProps>`
     }
 
     .feeling-image {
-      display: flex; /* Ensures the image is visible */
       justify-content: center;
       align-items: center;
+      margin: 0 auto;
 
       img {
         max-width: 80%; /* Scales the image for smaller screens */
         height: auto; /* Maintains aspect ratio */
-        margin: 0 auto; /* Centers the image */
       }
     }
   }

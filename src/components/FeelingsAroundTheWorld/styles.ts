@@ -26,11 +26,11 @@ export const Container = styled.section<ContainerProps>`
     }
 
     .feelings-grid {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr; /* Default: 3 columns */
     }
 
     .celebrations-grid {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; /* Default: 2 columns */
     }
 
     .feeling, .celebration {
@@ -38,7 +38,7 @@ export const Container = styled.section<ContainerProps>`
       border: 1px solid #ccc;
       border-radius: 8px;
       text-align: center;
-      background: rgba(248, 248, 248, 0.6); 
+      background: rgba(248, 248, 248, 0.6);
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       
       h4 {
@@ -49,7 +49,7 @@ export const Container = styled.section<ContainerProps>`
         margin-bottom: 0.5rem;
         font-size: 1.6rem;
         color: var(--green);
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Added text shadow */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       }
 
       h4 img {
@@ -62,7 +62,7 @@ export const Container = styled.section<ContainerProps>`
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 1.8rem;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Added text shadow */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       }
     }
   }
@@ -78,11 +78,20 @@ export const Container = styled.section<ContainerProps>`
     }
   }
 
-  @media (max-width: 960px) {
+  /* Media Query for smaller screens */
+  @media (max-width: 767px) {  /* Targeting devices smaller than 768px (including iPhone SE) */
     display: block;
+    
+    .feelings-grid {
+      grid-template-columns: repeat(1, 1fr) !important; /* Force 1 column */
+    }
 
-    .feelings-grid, .celebrations-grid {
-      grid-template-columns: 1fr;
+    .celebrations-grid {
+      grid-template-columns: repeat(1, 1fr) !important; /* Force 1 column */
+    }
+
+    .feeling, .celebration {
+      padding: 1rem;
     }
   }
 `;
