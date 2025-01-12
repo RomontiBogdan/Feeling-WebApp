@@ -1,4 +1,5 @@
 {
+  "homepage": "http://RomontiBogdan.github.io/Feeling-WebApp",
   "name": "react-portfolio-darktheme",
   "version": "0.1.0",
   "private": true,
@@ -26,6 +27,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -44,7 +47,8 @@
     "@types/react-google-recaptcha": "^2.1.2",
     "@types/react-router-hash-link": "^2.4.4",
     "@types/styled-components": "^5.1.18",
-    "@types/validator": "^13.7.1"
+    "@types/validator": "^13.7.1",
+    "gh-pages": "^6.3.0"
   },
   "keywords": [],
   "description": ""
