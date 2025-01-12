@@ -7,7 +7,7 @@ interface ContainerProps {
 
 export const Container = styled.header<ContainerProps>`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 1.8rem 10rem;
   
@@ -21,15 +21,10 @@ export const Container = styled.header<ContainerProps>`
   z-index: 1000;
 
   .logo {
-    color: #ffff;
+    color: #000; /* Black color for the logo */
     font-family: "Red Hat Display", sans-serif;
     font-weight: 500;
     text-transform: uppercase;
-    transition: filter 0.25s;
-  }
-
-  .logo:hover {
-    filter: brightness(0.6);
   }
 
   @media (max-width: 960px) {
