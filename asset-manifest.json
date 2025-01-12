@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Feeling-WebApp/static/css/main.e016d95c.css",
-    "main.js": "/Feeling-WebApp/static/js/main.860c910a.js",
+    "main.js": "/Feeling-WebApp/static/js/main.a4afb8d2.js",
     "static/media/blaise-pascal.png": "/Feeling-WebApp/static/media/blaise-pascal.742952788b5423ba468e.png",
     "static/media/ralph-waldo-emerson.png": "/Feeling-WebApp/static/media/ralph-waldo-emerson.519d13a3be8cb4481fda.png",
     "static/media/orson-welles.png": "/Feeling-WebApp/static/media/orson-welles.30e4e47ec470ee706e97.png",
@@ -24,10 +24,10 @@
     "static/media/smile-icon.svg": "/Feeling-WebApp/static/media/smile-icon.bad1b183f3140b4976dcd159b3a015ff.svg",
     "static/media/frown-icon.svg": "/Feeling-WebApp/static/media/frown-icon.8455c60d6a48464c8d8609583d9cc0dd.svg",
     "main.e016d95c.css.map": "/Feeling-WebApp/static/css/main.e016d95c.css.map",
-    "main.860c910a.js.map": "/Feeling-WebApp/static/js/main.860c910a.js.map"
+    "main.a4afb8d2.js.map": "/Feeling-WebApp/static/js/main.a4afb8d2.js.map"
   },
   "entrypoints": [
     "static/css/main.e016d95c.css",
-    "static/js/main.860c910a.js"
+    "static/js/main.a4afb8d2.js"
   ]
 }
